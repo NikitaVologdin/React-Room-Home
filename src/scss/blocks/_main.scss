@@ -1,0 +1,9 @@
+@use "../abstractions/media";
+
+.main {
+    @media screen and (min-width: 1160px) {
+        display: grid;
+        grid-template-columns: 840px auto 40%;
+        grid-template-areas: "slider slider article " "content content content";
+    }
+}

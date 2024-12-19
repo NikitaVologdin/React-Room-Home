@@ -1,0 +1,16 @@
+@use "functions";
+@use "mixins";
+
+:root {
+    --container-width: 1440px;
+    --container-padding-x: 0px;
+
+    --dark-gray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+
+    --heading-font-size: mixins.fluid-text(48, 40);
+    --paragraph-font-size: functions.rem(16);
+    --transition-duration: 0.2s;
+}

@@ -1,0 +1,31 @@
+@use "../abstractions/media";
+
+.slider {
+    overflow-x: hidden;
+
+    @include media.mobile-above {
+        grid-area: slider;
+    }
+}
+
+.slider__images {
+    display: flex;
+    height: 100%;
+    // max-width: 840px;
+    // max-height: 534px;
+}
+
+.slider__img {
+    height: 100%;
+    min-width: 100vw;
+    max-width: none;
+
+    @include media.tablet-above {
+        height: 100%;
+        width: auto;
+    }
+
+    @media screen and (min-width: 1160px) {
+        min-width: auto;
+    }
+}

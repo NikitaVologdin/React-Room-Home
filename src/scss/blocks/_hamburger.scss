@@ -1,0 +1,11 @@
+@use "../abstractions/mixins";
+@use "../abstractions/media";
+
+.hamburger {
+    @include mixins.reset-button;
+    cursor: pointer;
+
+    @include media.tablet-above {
+        display: none;
+    }
+}

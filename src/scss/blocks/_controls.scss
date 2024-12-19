@@ -1,0 +1,38 @@
+@use "../abstractions/mixins";
+@use "../abstractions/media";
+
+.controls {
+    display: flex;
+    position: absolute;
+    top: -56px;
+    right: 0;
+
+    @include media.mobile-above {
+        top: -80px;
+    }
+
+    @media screen and (min-width: 1160px) {
+        bottom: 0;
+        left: 0;
+        top: auto;
+    }
+}
+
+.controls__button {
+    width: 56px;
+    height: 56px;
+    @include mixins.flex-center();
+    border: none;
+    background-color: var(--black);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+
+    &:hover {
+        background-color: var(--dark-gray);
+    }
+
+    @include media.mobile-above {
+        width: 80px;
+        height: 80px;
+    }
+}

@@ -1,0 +1,46 @@
+@use "../abstractions/media";
+
+.nav {
+    margin-left: 36px;
+}
+
+.nav__list {
+    display: none;
+    gap: 21px;
+    color: var(--white);
+    font-weight: 500;
+
+    @include media.tablet-above {
+        display: flex;
+        gap: 11px;
+    }
+}
+
+.nav__link {
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    &:after {
+        content: "";
+        opacity: 0;
+        // width: 16px;
+        width: 0px;
+        height: 2px;
+        position: absolute;
+        left: 50%;
+        background-color: var(--white);
+        transform: translate(-50%);
+        transition:
+            opacity var(--transition-duration) ease-in,
+            width 0.3s ease;
+        top: 34px;
+    }
+    &:hover::after {
+        opacity: 1;
+        width: 16px;
+    }
+    &:focus-visible::after {
+        opacity: 1;
+        width: 16px;
+    }
+}
