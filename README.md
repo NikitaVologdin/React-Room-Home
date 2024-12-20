@@ -67,6 +67,7 @@ Users should be able to:
 ### Continued development
 
 - Looking for ways to make slider`s grid column responsive
+- Make slider to slide for the last or first slide on the negative or over length count click for a better UX.
 - Make tests
   1. Accessibility
   2. CSS
