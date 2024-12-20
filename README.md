@@ -72,10 +72,6 @@ Users should be able to:
 - Framer motion variants can be functions and receive a parameter from elements custom attribute.
 - Animation shifting/bouncing on leaving dom can be resolved using `position:relative` on the parent and `position: absolute` on the leaving dom child.
 
-### Continued development
-
-- Looking for ways to make slider`s grid column responsive
-
 ### Useful resources
 
 - [CSS tricks almanac](https://css-tricks.com/almanac/properties/g/grid-template-columns/) - This helped me to understand why i am having gaps in the grid.
