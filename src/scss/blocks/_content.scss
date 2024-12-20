@@ -26,6 +26,7 @@
 
     @media screen and (min-width: 1160px) {
         height: 100%;
+
         &_dark {
             align-self: auto;
         }
@@ -33,20 +34,26 @@
             align-self: auto;
         }
     }
+
+    @media screen and (min-width: 1400px) {
+        max-width: 440px;
+    }
 }
 
 .content__article {
     padding-top: functions.rem(49);
     padding-inline: functions.rem(33);
     padding-bottom: functions.rem(41);
-    // max-width: 420px;
     margin: 0 auto;
 
     @media screen and (min-width: 1160px) {
         display: flex;
         justify-content: center;
-
         flex-direction: column;
+
+        padding-top: functions.rem(64);
+        padding-inline: functions.rem(48);
+        padding-bottom: functions.rem(58);
     }
 }
 
