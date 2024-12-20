@@ -17,6 +17,14 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
 
 ## Overview
 
+Responsive and accessible Room homepage layout with optimized fonts and images.
+React components:
+
+- Animated slider
+- Dialog
+- Slider controls
+- Dynamic article
+
 ### The challenge
 
 Users should be able to:
@@ -27,7 +35,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop layout screenshot](./screenshots/screenshot1.png)
 
 ### Links
 
@@ -67,9 +75,6 @@ Users should be able to:
 ### Continued development
 
 - Looking for ways to make slider`s grid column responsive
-- Make tests
-  1. Accessibility
-- Final readme update
 
 ### Useful resources
 
@@ -81,5 +86,3 @@ Users should be able to:
 
 - Website - [Nikita Vologdin](https://vologdin.eu/portfolio)
 - Frontend Mentor - [@NikitaVologdin](https://www.frontendmentor.io/profile/NikitaVologdin)
-
-<!-- ## Acknowledgments -->

@@ -14,13 +14,14 @@
     padding-block: functions.rem(60) functions.rem(72);
 
     @include media.mobile-above {
-        padding-inline: 13.33%;
-        // padding-inline: functions.rem(80);
-        // padding-block: functions.rem(120) functions.rem(153);
-        padding-block: 22.47% 28.65%;
-
+        padding-inline: functions.rem(80);
+        padding-block: functions.rem(120) functions.rem(153);
         @include mixins.flex-center();
         flex-direction: column;
+    }
+    @media screen and (min-width: 1160px) {
+        padding-inline: 13.33%;
+        padding-block: 22.47% 28.65%;
     }
 }
 
@@ -62,6 +63,9 @@
     }
     &:hover &-icon path {
         fill: var(--dark-gray);
+    }
+    &:focus-visible {
+        outline: 1px solid var(--black);
     }
 
     &-text {

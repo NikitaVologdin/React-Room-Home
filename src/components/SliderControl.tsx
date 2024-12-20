@@ -10,11 +10,11 @@ export default function SliderControl({
   slidesLength,
 }: props) {
   function decreaseHandler() {
-    if (index - 1 < 0) return;
+    if (index - 1 < 0) return onChangeIndex(slidesLength - 1);
     onChangeIndex(index - 1);
   }
   function increaseHandler() {
-    if (index + 1 > slidesLength - 1) return;
+    if (index + 1 > slidesLength - 1) return onChangeIndex(0);
     onChangeIndex(index + 1);
   }
 
