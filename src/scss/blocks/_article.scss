@@ -14,8 +14,11 @@
     padding-block: functions.rem(60) functions.rem(72);
 
     @include media.mobile-above {
-        padding-inline: functions.rem(80);
-        padding-block: functions.rem(120) functions.rem(153);
+        padding-inline: 13.33%;
+        // padding-inline: functions.rem(80);
+        // padding-block: functions.rem(120) functions.rem(153);
+        padding-block: 22.47% 28.65%;
+
         @include mixins.flex-center();
         flex-direction: column;
     }
