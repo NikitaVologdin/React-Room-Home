@@ -3,7 +3,7 @@
 .main {
     @media screen and (min-width: 1160px) {
         display: grid;
-        grid-template-columns: minmax(300px, 420px) minmax(300px, 420px) auto;
+        grid-template-columns: minmax(300px, 420px) minmax(300px, 420px) 1fr;
         grid-template-areas: "slider slider article " "content content content";
     }
 }
