@@ -4,8 +4,8 @@ export default function Content() {
       <img
         src="/images/image-about-dark.webp"
         className="content__image content__image_dark"
-        width={376}
-        height={238}
+        width={420}
+        height={266}
         alt=""
         loading="lazy"
       />
@@ -23,8 +23,8 @@ export default function Content() {
       <img
         src="/images/image-about-light.webp"
         className="content__image content__image_light"
-        width={376}
-        height={238}
+        width={440}
+        height={266}
         alt=""
         loading="lazy"
       />
