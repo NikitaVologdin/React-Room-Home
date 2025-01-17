@@ -31,6 +31,7 @@ export default function Dialog({ openDialog, onOpenDialog }: props) {
       exit={{ y: -200 }}
       transition={{ duration: 0.3, ease: "easeIn" }}
     >
+      <div></div>
       <button
         className="dialog__close"
         onClick={() => {

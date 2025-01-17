@@ -36,18 +36,17 @@
     }
 }
 
-.dialog__close {
-    @include mixins.reset-button;
-    cursor: pointer;
-}
-
 .dialog__nav .nav__list {
     display: flex;
     color: var(--black);
 }
 
 .dialog__close {
+    @include mixins.reset-button;
+    cursor: pointer;
     padding: 14px;
+    position: absolute;
+    left: 16px;
     &:focus {
         outline: 1px dotted var(--black);
     }
